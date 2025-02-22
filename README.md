@@ -12,6 +12,8 @@ Here's a step-by-step guide for integrating Salesforce with a SOAP API using SOA
    - Click on **API** under the **Integrations** section.
    - Under **API** documentation, you will see the **Generate Enterprise WSDL** link. Click on it.
    - A file download dialog will appear. Download the WSDL file (it will be named something like `enterprise.wsdl`).
+   - ![image](https://github.com/user-attachments/assets/3e253b0f-e8fe-4328-9c8c-d8b6caa4a7d0)
+
 
 ### Step 2: Open the Enterprise WSDL in SOAP UI
 
@@ -34,6 +36,8 @@ Here's a step-by-step guide for integrating Salesforce with a SOAP API using SOA
    - Select **Settings** → **My Personal Information** → **Reset My Security Token**.
    - Click **Reset Security Token**, and Salesforce will send a new token to your email.
    - Copy this token from your email.
+     ![image](https://github.com/user-attachments/assets/1bab3916-8e56-4570-9ec4-7d64529c1110)
+
 
 2. **Login Request**:
    - In the SOAP UI, expand the **enterprise.wsdl** project.
@@ -62,6 +66,8 @@ Here's a step-by-step guide for integrating Salesforce with a SOAP API using SOA
 
 4. **Submit the Login Request**:
    - Click the green **Submit** button in the top-left corner of the request window.
+   ![image](https://github.com/user-attachments/assets/4989820d-a34b-4954-803e-2692f0af1aef)
+
 
 5. **Collect Session ID and Server URL**:
    - If the login is successful, you will get a response similar to this:
@@ -110,6 +116,8 @@ Here's a step-by-step guide for integrating Salesforce with a SOAP API using SOA
 
 3. **Set the Endpoint URL**:
    - In the **Request** window, set the **Endpoint** URL to the `serverUrl` you got from the login response (e.g., `https://na1.salesforce.com/services/Soap/u/50.0`).
+     ![image](https://github.com/user-attachments/assets/57230008-ee9c-422b-9368-0326b70358ae)
+
 
 4. **Submit the Query**:
    - Click **Submit** to send the query.
